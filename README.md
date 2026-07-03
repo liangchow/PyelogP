@@ -1,10 +1,10 @@
 # PyelogP
 
-"Py e-log(P)" is a lightweight Python library for estimating the preconsolidation pressure (*P'c*) of oedometer test data using the strain-energy method (Becker et al., 1987) with knee-point detection in the e-log(P) space.
+"Py e-log(P)" is a lightweight Python library for estimating the preconsolidation pressure (*P'c*) of oedometer test data using the strain-energy method with knee-point detection and thresholding in the e-log(P) space.
 
 ![San Francisco Bay Mud (Bonaparte & Mitchell, 1976)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/sfbaymud.png)<br/>
-![Wallaceburg clay (Becker et al., 1987)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/wallaceburg_clay.png)<br/>
-![Louiseville clay (TPM, 1996)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/louiseville_clay.png)
+![Wallaceburg clay (Becker et al., 1987)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/wallaceburgclay.png)<br/>
+![Louiseville clay (TPM, 1996)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/louisevilleclay.png)
 
 ## Features
 
@@ -30,9 +30,12 @@ pip install -e .
 
 ## Quick start
 
+See `run.py` for a full example, including loading data from a CSV file via `Data.from_csv`.
+
 ```python
 from pyelogp import Data
 
+# Louiseville clay
 pressure = [59, 90, 120, 150, 165, 172, 184, 222, 300, 400]
 void_ratio = [2.115, 2.113, 2.098, 2.083, 2.055, 2, 1.8, 1.5, 1.3, 1.193]
 e0 = 1.21 (Optional)
@@ -52,8 +55,6 @@ Void ratio at pc (e_pc): 2.0573
 R² segment 1: 0.893768
 R² segment 2: 0.96937
 ```
-
-See `run.py` for a full example, including loading data from a CSV file via `Data.from_csv`.
 
 ## Contributing
 

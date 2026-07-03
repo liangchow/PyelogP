@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyelogp"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     {name="Liang Chern Chow", email="liangchern@gmail.com"},
     {name="Thierno Kane", email="tkane83@gmail.com"}
@@ -17,7 +17,6 @@ keywords = [
     "geotechnical",
     "consolidation",
     "settlement",
-    "oedometer",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
