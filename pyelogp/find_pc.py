@@ -207,7 +207,7 @@ class FindPc:
         -------
         cs : CubicSpline
         cs_curve : ndarray, shape (n_points, 5)
-            Columns: x_dense, y_dense, dy, d2y, kappa
+            Columns: x_dense, y_dense
         log_p_max_d2y : float
             log(P) at the location of maximum second derivative.
         """
@@ -217,14 +217,12 @@ class FindPc:
         cs       = CubicSpline(x_fit, y_fit)
         x_dense  = np.linspace(x_fit.min(), x_fit.max(), n_points)
         y_dense  = cs(x_dense)
-        dy       = cs(x_dense, 1)
         d2y      = cs(x_dense, 2)
-        kappa    = np.abs(d2y) / (1.0 + dy ** 2) ** 1.5
 
         idx_max_d2y    = int(np.argmax(d2y))
         log_p_max_d2y  = x_dense[idx_max_d2y]
 
-        return cs, np.column_stack((x_dense, y_dense, dy, d2y, kappa)), log_p_max_d2y
+        return cs, np.column_stack((x_dense, y_dense)), log_p_max_d2y
 
     @staticmethod
     def _find_knee(lc, cs_curve, min_len=10):
