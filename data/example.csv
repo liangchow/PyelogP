@@ -1,0 +1,14 @@
+# Below is an example data of Wallaceburg Clay (Becker et al., 1987) with a "," delimeter.
+# e0 = 1.24
+# pressure, void ratio
+10.0, 1.212
+24.6, 1.180
+48.5, 1.148
+97.2, 1.098
+189.2, 1.005
+382.3, 0.871
+755.8, 0.756
+1493.6, 0.647
+386.0, 0.687
+96.4, 0.743
+10.0, 0.849
