@@ -2,8 +2,8 @@
 
 "Py e-log(P)" is a lightweight Python library for estimating the preconsolidation pressure (*P'c*) of oedometer test data using the strain-energy method (Becker et al., 1987) with knee-point detection in the e-log(P) space.
 
-![San Francisco Bay Mud (Bonaparte & Mitchell, 1976)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/sfbaymud.png)
-![Wallaceburg clay (Becker et al., 1987)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/wallaceburg_clay.png)
+![San Francisco Bay Mud (Bonaparte & Mitchell, 1976)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/sfbaymud.png)<br/>
+![Wallaceburg clay (Becker et al., 1987)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/wallaceburg_clay.png)<br/>
 ![Louiseville clay (TPM, 1996)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/louiseville_clay.png)
 
 ## Features
@@ -21,7 +21,10 @@ pip install pyelogp
 ### Clone from GitHub
 
 ```bash
-git clone https://github.com/liangchow/pyelogp.git && cd pyelogp
+git clone https://github.com/liangchow/pyelogp.git
+cd pyelogp
+python -m venv .venv           # Recommended to use venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -e .
 ```
 
