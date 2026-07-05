@@ -1,5 +1,7 @@
 # PyelogP
 
+[![PyPI](https://img.shields.io/pypi/v/pyelogp)](https://pypi.org/project/pyelogp/)
+
 "Py e-log(P)" is a lightweight Python library for estimating the preconsolidation pressure (*P'c*) of oedometer test data using the strain-energy method with knee-point detection and thresholding in the e-log(P) space.
 
 ![San Francisco Bay Mud (Bonaparte & Mitchell, 1976)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/sfbaymud.png)<br/>
@@ -21,10 +23,16 @@ pip install pyelogp
 ### Clone from GitHub
 
 ```bash
+# Clone the repo
 git clone https://github.com/liangchow/pyelogp.git
 cd pyelogp
-python -m venv .venv           # Recommended to use venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
+
+# Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate      # macOS/Linux
+.venv\Scripts\activate         # Windows
+
+# Install dependencies
 pip install -e .
 ```
 
