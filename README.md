@@ -8,6 +8,8 @@
 ![Wallaceburg clay (Becker et al., 1987)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/wallaceburgclay.png)<br/>
 ![Louiseville clay (TPM, 1996)](https://raw.githubusercontent.com/liangchow/PyelogP/main/images/louisevilleclay.png)
 
+*Note: We have considered adding initial vertical effective stress (P'v0) as a threshold to pre-yield data for overconsolidated (OC) clays, as described in Becker et al. (1987). However, knee detection may eliminate the need for this requirement. We are currently seeking additional datasets for OC clays to further validate the general applicability of this approach.*
+
 ## Features
 
 - Manual data input or import from a `.csv` file.

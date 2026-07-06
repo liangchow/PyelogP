@@ -2,11 +2,13 @@
 
 Thank you for checking out the `PyelogP` repository and for your interest in contributing to the project. 
 
-The current implementation follows the strain-energy approach (Becker et al., 1987) as closely as possible based on our interpretation of the method. As practicing geotechnical engineers, my co-author and I aim to provide a tool that is useful to the geotechnical community, informed by both practical experience and judgment. However, the codebase is still evolving and would benefit from further refinement, validation, and improvements.
+The current implementation follows the strain-energy approach (Becker et al., 1987) as closely as possible based on our interpretation of the method. As practicing geotechnical engineers, we aim to provide a tool that is useful to the geotechnical community, informed by both practical experience and judgment. However, the codebase is still evolving and would benefit from further refinement, validation, and improvements.
+
+*Note: We have considered adding initial vertical effective stress (P'v0) as a threshold to pre-yield data for overconsolidated (OC) clays, as described in Becker et al. (1987). However, knee detection may eliminate the need for this requirement. We are currently seeking additional datasets for OC clays to further validate the general applicability of this approach.*
 
 We welcome contributions in the following areas:
 
-- Validate using additional datasets
+- Validate using additional datasets, both NC and OC clays
 - Extend validation across constant rate of strain (CRS) oedometer testing results
 - Expand documentation, examples, and tutorials, i.e., Jupyter Notebook
 - Write unit tests and improving test coverage

@@ -2,3 +2,4 @@ __pycache__/
 pyelogp/ver/
 venv/
 dist/
+notebook/
